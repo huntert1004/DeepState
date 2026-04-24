@@ -1,0 +1,74 @@
+/* =========================================
+   VARIABLES
+   -----------------------------------------
+   Global design values used across the app:
+   - Colors
+   - Spacing
+   - Font sizes
+   - Border radius
+   - Shadows
+
+   Use CSS variables (:root) so everything
+   stays consistent and easy to update.
+========================================= */
+:root {
+    --brand-purple-100: #B5AEF4;
+    --brand-purple-200: #8279D4;
+    --brand-purple-300: #6A60C9;
+    --brand-purple-400: #3D348C;
+    --brand-purple-500: #2E267C;
+    --brand-purple-600: #1E1665;
+    --brand-purple-700: #0E074C;
+    --brand-purple-800: #06003D;
+
+    --supporting-red-100: #F88985;
+    --supporting-red-200: #DE6A66;
+    --supporting-red-300: #CD4945;
+    --supporting-red-400: #BA332F;
+    --supporting-red-500: #8D2421;
+    --supporting-red-600: #661411;
+    --supporting-red-700: #400A09;
+    --supporting-red-800: #3D0200;
+
+    --supporting-blue-100: #98A6FF;
+    --supporting-blue-200: #788AFF;
+    --supporting-blue-300: #5365DB;
+    --supporting-blue-400: #3345BC;
+    --supporting-blue-500: #1D2C8F;
+    --supporting-blue-600: #0F1B6C;
+    --supporting-blue-700: #0B1555;
+    --supporting-blue-800: #00083D;
+
+    --supporting-green-100: #AEF5E8;
+    --supporting-green-200: #58C2AE;
+    --supporting-green-300: #3FBDA6;
+    --supporting-green-400: #1D947E;
+    --supporting-green-500: #0D7260;
+    --supporting-green-600: #095648;
+    --supporting-green-700: #044B3E;
+    --supporting-green-800: #003D32;
+
+    --neutral-grey-100: #DBDEDE;
+    --neutral-grey-200: #BDBBBE;
+    --neutral-grey-300: #A2A6A6;
+    --neutral-grey-400: #7B7B7C;
+    --neutral-grey-500: #606363;
+    --neutral-grey-600: #434646;
+    --neutral-grey-700: #323333;
+    --neutral-grey-800: #131314;
+
+
+    --text-xs: 1.2rem;   /* 12px - Captions */
+    --text-sm: 1.4rem;   /* 14px - Sidebar links */
+    --text-base: 1.6rem; /* 16px - Body text/Chat */
+    --text-md: 1.8rem;   /* 18px - Subheaders */
+    --text-lg: 2.4rem;   /* 24px - Section Titles */
+    --text-xl: 3.2rem;   /* 32px - Page Titles */
+    --text-xxl: 4.8rem;  /* 48px - Hero/Logo text */
+
+    --font-main: 'Montserrat', sans-serif;
+    --font-mono: 'Fira Code', monospace;
+
+    
+
+}

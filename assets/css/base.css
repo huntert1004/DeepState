@@ -1,0 +1,44 @@
+/* =========================================
+   BASE / GLOBAL STYLES
+   -----------------------------------------
+   Default styles applied across the entire app:
+   - CSS reset
+   - Body styles
+   - Typography (h1, p, a, etc.)
+   - Global defaults
+
+   ❗ No layout or positioning here
+========================================= */
+@import 'variable.css';
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    /* The "Golden" line height for readability */
+    color: var(--neutral-grey-100);
+    -webkit-font-smoothing: antialiased;
+    /* Makes text look crisper on Linux/Mac */
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: var(--text-xl);
+    color: var(--brand-purple);
+}
+
+h2 {
+    font-size: var(--text-lg);
+}
+p {
+    font-size: var(--text-sm);
+}
+ul {
+    padding-inline-start: unset;
+}

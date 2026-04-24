@@ -1,0 +1,132 @@
+/* =========================================
+   LAYOUTS
+   -----------------------------------------
+   Defines the structure of the page:
+   - Header
+   - Sidebar
+   - Footer
+   - Main content area
+   - Page grid / flex layout
+
+   Controls WHERE things go on the page
+========================================= */
+@import 'variable.css';
+
+:root {
+    --sidebar-width: 250px;
+
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: var(--sidebar-width) 1fr;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar content";
+    min-height: 100vh;
+}
+
+.wrapper.collapsed {
+    --sidebar-width: 80px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--neutral-grey-600);
+    color: var(--neutral-grey-100);
+    padding: 10px;
+}
+
+.sidebar .menu {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.nav-item {
+    color: var(--neutral-grey-100);
+    line-height: 3;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+}
+.nav-child {
+    padding-inline-start: 40px;
+}
+
+.fa-arrow-right{
+  transform: rotate(0deg);
+  transition: transform 0.2s linear;
+}
+
+.fa-arrow-right-open{
+  transform: rotate(90deg);
+  transition: transform 0.2s linear;
+}
+
+ .glyph-icon {
+    font-weight: 700;
+    vertical-align: middle;
+    padding: 15px;
+}
+
+
+
+.dropdown-button{
+    background: transparent;
+    border: none;
+}
+
+
+
+
+.sidebar .menu-bottom {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+.sidebar .menu-top{
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.menu-top  {
+    color: var(--neutral-grey-100);
+}
+.menu-top i:hover {
+    color: var(--neutral-grey-100);
+}
+.menu-top .bars{
+    padding: 12px;
+}
+
+.logo{
+    width: 40%;
+    height: auto;
+}
+
+
+
+
+/* ===== HEADER ===== */
+.header {
+    grid-area: header;
+    background-color: var(--neutral-grey-100);
+    border-bottom: 1px solid var(--neutral-grey-100);
+    padding: 20px;
+}
+
+/* ===== CONTENT ===== */
+.content {
+    grid-area: content;
+    background-color: var(--neutral-grey-800);
+    padding: 20px;
+}
