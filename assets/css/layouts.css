@@ -16,6 +16,9 @@
     --sidebar-width: 250px;
 
 }
+
+
+/* Full Page Wrapper Grid */
 .wrapper {
     display: grid;
     grid-template-columns: var(--sidebar-width) 1fr;
@@ -26,10 +29,15 @@
     min-height: 100vh;
 }
 
+
+/* ---------------------------------------------- Sidebar Start -------------------------------------------- */
+
+/* Full Page Wrapper COllapse Class */
 .wrapper.collapsed {
-    --sidebar-width: 80px;
+    grid-template-columns: 55px 1fr;
 }
 
+/* Left Section of Full Page Wrapper the Sidebar Section */
 .sidebar {
     grid-area: sidebar;
     background-color: var(--neutral-grey-600);
@@ -37,6 +45,7 @@
     padding: 10px;
 }
 
+/* Middle Section of Sidebar */
 .sidebar .menu {
     height: 70%;
     display: flex;
@@ -44,7 +53,7 @@
     justify-content: flex-start;
 }
 
-
+/* Reused Nav Item for Sidebar Menus */
 .nav-item {
     color: var(--neutral-grey-100);
     line-height: 3;
@@ -53,36 +62,36 @@
     display: flex;
     align-items: center;
 }
-.nav-child {
-    padding-inline-start: 40px;
-}
 
+
+/* Sidebar icon button on load state */
 .fa-arrow-right{
   transform: rotate(0deg);
   transition: transform 0.2s linear;
 }
 
+/* Sidebar icon button open animation triggered in navigation.js */
 .fa-arrow-right-open{
   transform: rotate(90deg);
   transition: transform 0.2s linear;
 }
 
+
+/* general reusable styling for our icons */
  .glyph-icon {
     font-weight: 700;
     vertical-align: middle;
-    padding: 15px;
+    padding: 10px;
+    
 }
 
-
-
+/* general button styling class for dropdown  */
 .dropdown-button{
     background: transparent;
     border: none;
 }
 
-
-
-
+/* Bottom portion of Sidebar where we have settings */
 .sidebar .menu-bottom {
     height: 15%;
     display: flex;
@@ -90,7 +99,7 @@
     justify-content: end;
 }
 
-
+/* Top portion of Sidebar where we have logo + our bar icon button for dropdown collapse */
 .sidebar .menu-top{
     height: 15%;
     display: flex;
@@ -98,23 +107,26 @@
     justify-content: space-between;
 
 }
+/* Sets color of text in top menu */
 .menu-top  {
     color: var(--neutral-grey-100);
 }
+/* Sets color on hover of text and icons in top menu */
 .menu-top i:hover {
     color: var(--neutral-grey-100);
 }
+/* Padding to perfectly center the collapse button so it fits with the collapse animation */
 .menu-top .bars{
-    padding: 12px;
+    padding: 10px;
 }
-
+/* logo styling to account for size and aspect ration of image(our logo) */
 .logo{
     width: 40%;
     height: auto;
 }
 
 
-
+/* ---------------------------------------------- Sidebar End -------------------------------------------- */
 
 /* ===== HEADER ===== */
 .header {

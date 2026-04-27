@@ -17,7 +17,7 @@
         </ul>
         <button id="chats" class="nav-item dropdown-button">Chats<i class="glyph-icon fa-solid fa-arrow-right"></i></button>
         <ul>
-            <li class="nav-item"><i class="glyph-icon fa-solid fa-diagram-project"></i>Project Name</li>
+            <li class="nav-item">Chat Name</li>
         </ul>
     </div>
     <div class="menu-bottom">

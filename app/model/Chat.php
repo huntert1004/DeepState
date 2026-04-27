@@ -1,4 +1,5 @@
 <?php
+
 // app/model/Chat.php
 
 class Chat {

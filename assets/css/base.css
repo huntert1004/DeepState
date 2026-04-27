@@ -42,3 +42,7 @@ p {
 ul {
     padding-inline-start: unset;
 }
+
+.hide{
+    display: none !important;
+}
